@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio using Html, CSS, JavaScript">
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha512-v/wOVTkoU7mXEJC3hXnw9AA6v32qzpknvuUF6J2Lbkasxaxn2nYcl+HGB7fr/kChGfCqubVr1n2sq1UFu3Gh1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+</head>
+<body>
+    
+    <div class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">
+                Prakash <span>Punj</span>
+            </a>
+
+            <div class="nav_toggle" id="nav-toggle">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">Home</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">About</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#services" class="nav_link">Services</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#knowledge" class="nav_link">Knowledge</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#my_project" class="nav_link">My Projects</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link">Projects</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid bounce-in scroll-animation">
+                <div class="home_content">
+                    <div class="home_data">
+                        <h3 class="home_subtitle">
+                            Hello, <span>I'm</span>
+                        </h3>
+                        
+                        <h1 class="home_title">Prakash Punj</h1>
+
+                        <h3 class="home_education">Front-end Developer</h3>
+
+                        <p class="home_description">
+                            With knowledge in web development and
+                            design, I offer the best projects resulting
+                            in quality work.
+                        </p>
+
+                        <a href="#contact" class="button zoom-in scroll-animation">Let's Talk</a>
+
+                    </div>
+
+                    <div class="home_social fade-in scroll-animation">
+                        <a href="https://github.com/Prakash-Punj" target="_blank" class="home_social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://app.netlify.com/teams/prakashpunj29/sites" target="_blank" class="home_social-link">
+                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/netlify.svg" alt="Netlify" width="24">
+                        </a>
+                        <a href="https://www.linkedin.com/in/prakash-punj-wbut-wbut/" target="_blank" class="home_social-link">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home_image fade-in scroll-animation" data-aos="fade-left">
+                    <img class="home_img" src="Image/pic.png" width="640" height="925" alt="img1">
+                </div>
+
+            </div>
+        </section>
+
+        <div class="extra extra_left"> <span class="extra_text">EXTRA</span> 
+            <div class="extra_hide">
+                <div class="extra_container">
+                    <button class="extra_click"><img src="/Image/weather.png" alt="weather"></button>
+                    <button class="extra_click"><img src="/Image/geo_location.png" alt="geo location"></button>
+                    <button class="extra_click"><img src="/Image/calender.png" alt="calender"></button>
+                    <button class="extra_click"><img src="/Image/calculator.png" alt="calculator"></button>
+                    <button class="extra_click"><img src="/Image/stopwatch.png" alt="stopwatch"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra_part_left">
+            <div class="weather extra_show">
+                <div class="row">
+                    <form>
+                        <input type="text" id="search" placeholder="Enter city name">
+                        <button type="submit" class="btn">submit</button>
+                    </form>
+                </div>
+                <!-- <div id="weather"></div> -->
+                <div class="row" id="weather">
+                    <!-- <div>
+                        <img src="k1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>32 &#8451;</h2>
+                        <h4>clear sky</h4>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="geo_location extra_show">
+                <button class="geo-btn"> Show user location</button>
+                <p class="showDetails"> User location details</p>
+            </div>
+
+            <div class="calender_area extra_show">
+                <div class="wrapper">
+                    <header>
+                        <p class="current-date">September 2022</p>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                            <span id="next" class="material-symbols-rounded">chevron_right</span>
+                        </div>
+                    </header>
+                    <div class="calender">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculator_part extra_show">
+                <div id="calculator">
+                    <div class="display">
+                        <input id="display" readonly>
+                    </div>
+                    <div id="keys">
+                        <button onclick="clearDisplay()">AC</button>
+                        <button onclick="del()">DEL</button>
+                        
+                        <button onclick="toShow('/')">/</button>
+                        <button onclick="toShow('*')">*</button>
+                        <button onclick="toShow('7')">7</button>
+                        <button onclick="toShow('8')">8</button>
+        
+                        <button onclick="toShow('9')">9</button>
+                        <button onclick="calculate()">=</button>
+                        <button onclick="toShow('4')">4</button>
+                        <button onclick="toShow('5')">5</button>
+        
+                        <button onclick="toShow('6')">6</button>
+                        <button onclick="toShow('-')">-</button>
+                        <button onclick="toShow('1')">1</button>
+                        <button onclick="toShow('2')">2</button>
+        
+                        <button onclick="toShow('3')">3</button>
+                        <button onclick="toShow('+')">+</button>
+                        <button onclick="toShow('.')">.</button>
+                        <button onclick="toShow('0')">0</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="stopwatch extra_show">
+                <h1 id="displayTime">00:00:00</h1>
+                <div class="buttons">
+                    <button onclick="watchStop()">Pause</button>
+                    <button onclick="watchStart()">Start</button>
+                    <button onclick="watchReset()">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra extra_right"> <span class="extra_text">EXTRA</span> 
+            <div class="extra_hide">
+                <div class="extra_container">
+                    <button class="extra_click"><img src="/Image/color_delete.png" alt="color delete"></button>
+                    <button class="extra_click"><img src="/Image/cradle_img.png" alt="cradle"></button>
+                    <button class="extra_click"><img src="/Image/eclipse.png" alt="eclipse"></button>
+                    <button class="extra_click"><img src="/Image/neon_img.png" alt="neon"></button>
+                    <button class="extra_click"><img src="/Image/rain_img.png" alt="rain"></button>
+                    <button class="extra_click"><img src="/Image/shake_img.png" alt="shake"></button>
+                    <button class="extra_click"><img src="/Image/text_shake.png" alt="text shake"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="extra_part_right">
+            <div class="color_delete extra_show">
+                <h1>Tech_Altum</h1>
+            </div>
+
+            <div class="cradle_part extra_show">
+                <div class="cradle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="neon_part extra_show">
+                <div class="neon"></div>
+            </div>
+
+            <div class="eclipse extra_show">
+                <div class="universe">
+                    <div class="sun"></div>
+                </div>
+            </div>
+
+            <div class="rain_part extra_show">
+                <div class="rain"></div>
+            </div>
+
+            <div class="shake extra_show">
+                <button type="button">Shake</button>
+            </div>
+
+            <div class="text extra_show">
+                <h1>Tech <br> Altum</h1>
+            </div>
+        </div>
+
+
+        <section class="about section" id="about">
+                <div class="about_container container grid fade-in scroll-animation">
+                    <div class="about_data">
+                        <h3 class="section_subtitle fade-in scroll-animation">
+                            My <span>Intro</span>
+                        </h3>
+
+                        <h2 class="section_title">
+                            About Me
+                        </h2>
+
+                        <p class="about_description">
+                            Frontend developer, I create web pages With
+                            UI / UX user interface, I have years of
+                            experience and many clients are happy with the
+                            projects carried out.
+                        </p>
+
+                        <a href="#contact" class="button fade-in scroll-animation">Contact Me</a>
+                    </div>
+
+                    <div class="about_image rotate-in scroll-animation">
+                        <img src="/Image/pic.png" alt="img2" width="640" height="940" id="imageBorder" class="about_img">
+                    </div>
+                </div>
+        </section>
+
+        <section class="skills section">
+                <div class="skills_container container grid">
+                    <div class="skills_data fade-in scroll-animation" data-aos="zoom-in-up">
+                        <h3 class="section_subtitle">
+                            <span>Skills</span>
+                        </h3>
+                        <h2 class="section_title">
+                            My Skills
+                        </h2>
+                        <p class="skills_description">
+                            See fully what skills I have and perform
+                            to develop the projects for you.
+                        </p>
+
+                        <a href="#projects" class="button">See Projects</a>
+                    </div>
+
+                    <div class="skills_content fade-in scroll-animation" data-aos="zoom-in-down">
+                        <ol class="skils_group">
+                            <li class="skills_item">HTML & CSS</li>
+                            <li class="skills_item">SASS</li>
+                            <li class="skills_item">JavaScript</li>
+                            <li class="skills_item">JQuery</li>
+                            <li class="skills_item">Bootstrap</li>
+                            <li class="skills_item">React</li>
+                            <li class="skills_item">SEO</li>
+                        </ol>
+                        <ol class="skils_group" start="8">
+                            <li class="skills_item">Git & GitHub</li>
+                            <li class="skills_item">Netlify</li>
+                            <li class="skills_item">PSD</li>
+                        </ol>
+                    </div>
+                </div>
+        </section>
+
+        <section class="services section " id="services">
+            <h3 class="section_subtitle fade-in scroll-animation">
+                My <span>Services</span>
+            </h3>
+
+            <h2 class="section_title fade-in scroll-animation">
+                What I Do
+            </h2>
+
+            <div class="services_container container grid fade-in scroll-animation">
+                <article class="services_card rotate-in scroll-animation">
+                    <i class="ri-layout-3-line services_icon"></i>
+
+                    <h2 class="services_title">Web Developer</h2>
+
+                    <p class="services_description">
+                        Development of custom web pages.
+                        Using current technologies and
+                        libraries of the labor field.
+                    </p>
+                </article>
+                <article class="services_card fade-in scroll-animation">
+                    <i class="ri-pantone-line services_icon"></i>
+
+                    <h2 class="services_title">UI/UX Designer</h2>
+
+                    <p class="services_description">
+                        I offer design of web interfaces and 
+                        mobile applications, design made in 
+                        figma, adobe xd and sketch.
+                    </p>
+                </article>
+                <article class="services_card rotate-in scroll-animation" data-aos="flip-right">
+                    <i class="ri-pen-nib-line services_icon"></i>
+
+                    <h2 class="services_title">Graphic Design</h2>
+
+                    <p class="services_description">
+                        I make designs at the client's request,
+                        banner design, posters, digital
+                        designs among others.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge section" id="knowledge">
+            <h3 class="section_subtitle">
+                My <span>Knowledge</span>
+            </h3>
+            
+            <h2 class="section_title">
+                Rated myself
+            </h2>
+
+            <div class="knowledge_container  container">
+                <ul class="grid">
+                    <li class="fade-in scroll-animation" data-aos="fade-up"
+                    data-aos-duration="2000">
+                        <p class="number" id="number1">100</p>
+                        <p>HTML</p>
+                    </li>
+                    <li class="fade-in scroll-animation" data-aos="fade-up"
+                    data-aos-duration="2000">
+                        <p class="number" id="number2">95</p>
+                        <p>CSS</p>
+                    </li>
+                    <li class="fade-in scroll-animation" data-aos="fade-up"
+                    data-aos-duration="1000">
+                        <p class="number" id="number3">85</p>
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="fade-in scroll-animation" data-aos="fade-up"
+                    data-aos-duration="1000">
+                        <p class="number" id="number4">85</p>
+                        <p>ReactJs</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="my_project section" id="my_project">
+            <h3 class="section_subtitle">
+                My <span>Projects</span>
+            </h3>
+            <h2 class="section_title">
+                My All Projects
+            </h2>
+
+            <div class="my_project_container container grid fade-in scroll-animation">
+                <div class="my_project_card">
+                    <p>HTML, CSS, SASS, <br> JavaScript</p>
+                    <ol>
+                        <li class="skills_item"><a href="https://Prakash-Punj.github.io/Project-10-js" target="_blank">Project-1</a></li>
+
+                        <li class="skills_item"><a href="https://Prakash-Punj.github.io/Project-32-sass" target="_blank">Project-2</a></li>
+
+                        <li class="skills_item"><a href="https://Prakash-Punj.github.io/Project-3-js" target="_blank">Project-3</a></li>
+
+                        <li class="skills_item"><a href="https://Prakash-Punj.github.io/Project-4-js" target="_blank">Project-4</a></li>
+
+                        <li class="skills_item"><a href="https://Prakash-Punj.github.io/Project-5-js" target="_blank">Project-5</a></li>
+                            
+                        <li class="skills_item"><a href="https://Prakash-Punj.github.io/Project-2-js" target="_blank">Project-6</a></li>
+                        
+                        <li class="skills_item"><a href="https://Prakash-Punj.github.io/Project-1-js" target="_blank">Project-7</a></li>
+
+                        <li class="skills_item"><a href="https://prakash-punj.github.io/Image-Gallery/" target="_blank">Project-8</a></li>
+                        
+                        <li class="skills_item"><a href="https://prakash-punj.github.io/CodeAlpha_Calculator/" target="_blank">Project-9</a></li>
+                        
+                        <li class="skills_item"><a href="https://prakash-punj.github.io/MusicPlayer/" target="_blank">Project-10</a></li>
+                        
+                        <li class="skills_item"><a href="https://prakash-punj.github.io/StopWatch/" target="_blank">Project-11</a></li>
+                        
+                        <li class="skills_item"><a href="https://prakash-punj.github.io/Tic-Tac/" target="_blank">Project-12</a></li>
+                    </ol>
+                </div>
+                <div class="my_project_card">
+                    <p class="mpcp">Bootstrap</p>
+                    <ol>
+                        <li class="skills_item"><a href="https://prakash-punj.github.io/Bootstrap-1/" target="_blank">Project-1</a></li>
+                    </ol>
+                </div>
+                <div class="my_project_card">
+                    <p class="mpcp">ReactJs</p>
+                    <ol>
+                        <li class="skills_item"><a href="https://reactjs-projects-clone-prakash-punj.netlify.app/" target="_blank">Project-1</a></li>
+                    </ol>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="projects section" id="projects">
+            <h3 class="section_subtitle">
+                My <span>Jobs</span>
+            </h3>
+
+            <h2 class="section_title">
+                Recent Projects
+            </h2>
+
+            <div class="projects_container container grid " >
+                <article class="projects_card fade-in scroll-animation">
+                    <img src="/Image/k18.jpg" alt="img3" class="projects_img">
+
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Web</span>
+
+                        <h2 class="projects_title">Modern website</h2>
+
+                        <a href="#" class="projects_button">
+                            View demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card fade-in scroll-animation" data-aos="fade-up"
+            data-aos-duration="1000">
+                    <img src="/Image/k22.jpg" alt="img4" class="projects_img">
+
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Web</span>
+
+                        <h2 class="projects_title">Modern website</h2>
+
+                        <a href="#" class="projects_button">
+                            View demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card fade-in scroll-animation" data-aos="fade-up"
+            data-aos-duration="1000">
+                    <img src="/Image/k24.jpg" alt="img5" class="projects_img">
+
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Web</span>
+
+                        <h2 class="projects_title">Modern website</h2>
+
+                        <a href="#" class="projects_button">
+                            View demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card fade-in scroll-animation"data-aos="fade-up"
+            data-aos-duration="1000">
+                    <img src="/Image/k35.png" alt="img6" class="projects_img">
+
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Web</span>
+
+                        <h2 class="projects_title">Modern website</h2>
+
+                        <a href="#" class="projects_button">
+                            View demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card fade-in scroll-animation"data-aos="fade-up"
+            data-aos-duration="1000">
+                    <img src="/Image/k38.png" alt="img7" class="projects_img">
+
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Web</span>
+
+                        <h2 class="projects_title">Modern website</h2>
+
+                        <a href="#" class="projects_button">
+                            View demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+                <article class="projects_card fade-in scroll-animation"data-aos="fade-up"
+            data-aos-duration="1000">
+                    <img src="/Image/k40.png" alt="img8" class="projects_img">
+
+                    <div class="projects_modal">
+                        <span class="projects_subtitle">Web</span>
+
+                        <h2 class="projects_title">Modern website</h2>
+
+                        <a href="#" class="projects_button">
+                            View demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h3 class="section_subtitle">
+                Get In <span>Touch</span>
+            </h3>
+
+            <h2 class="section_title">
+                Contact Me
+            </h2>
+
+            <div class="contact_container container grid fade-in scroll-animation" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <form action="" class="contact_form" id="contact-form">
+                    <div class="contact_group">
+                        <input type="text" name="user_name" required placeholder="Enter your name" class="contact_input">
+                        <input type="email" name="user_email" required placeholder="Enter your email" class="contact_input">
+                    </div>
+
+                    <textarea name="user_project" required class="contact_input" placeholder="Enter your message"></textarea>
+
+                    <p class="contact_message" id="contact-message">Message</p>
+
+                    <button class="button contact_button fade-in scroll-animation" type="submit" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="30000">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer_container container grid bounce-in scroll-animation">
+            <div>
+                <h1 class="footer_title">
+                    Prakash <span>Punj</span>
+                </h1>
+
+                <h2 class="footer_education">
+                    Front-end Developer
+                </h2>
+            </div>
+
+            <div class="footer_social">
+                <a href="https://github.com/Prakash-Punj" target="_blank" class="home_social-link">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https://app.netlify.com/teams/prakashpunj29/sites" target="_blank" class="home_social-link">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/netlify.svg" alt="Netlify" width="24">
+                </a>
+                <a href="https://www.linkedin.com/in/prakash-punj-wbut-wbut/" target="_blank" class="home_social-link">
+                    <i class="ri-linkedin-line"></i>
+                </a>
+            </div>
+
+            
+        </div>
+        <span class="footer_copy">
+            &#169; Copyright Bedimcode. All rights reserved
+        </span>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+
+
+
+
+
+
+<script type="text/javascript" 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script src="portfolio.js"></script>
+
+
+</body>
+</html>
